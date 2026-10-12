@@ -17,12 +17,109 @@
         <p>Campus School Supplies Shop</p>
     </header>
 
-    <main>
-        <h2>Welcome to our shop!</h2>
-        <p>Select school supplies to begin your order.</p>
+    <main class="container">
+
+        <!-- PRODUCT LIST -->
+        <section class="panel">
+            <h2>Product List</h2>
+
+            <div class="products">
+                <div class="product">
+                    <h3>Ballpen</h3>
+                    <p>₱12.00</p>
+                    <button class="add-btn" data-id="1">
+                        Add to Cart
+                    </button>
+                </div>
+
+                <div class="product">
+                    <h3>Pencil</h3>
+                    <p>₱10.00</p>
+                    <button class="add-btn" data-id="2">
+                        Add to Cart
+                    </button>
+                </div>
+
+                <div class="product">
+                    <h3>Notebook</h3>
+                    <p>₱35.00</p>
+                    <button class="add-btn" data-id="3">
+                        Add to Cart
+                    </button>
+                </div>
+
+                <div class="product">
+                    <h3>Yellow Pad</h3>
+                    <p>₱45.00</p>
+                    <button class="add-btn" data-id="4">
+                        Add to Cart
+                    </button>
+                </div>
+
+                <div class="product">
+                    <h3>Eraser</h3>
+                    <p>₱8.00</p>
+                    <button class="add-btn" data-id="5">
+                        Add to Cart
+                    </button>
+                </div>
+
+                <div class="product">
+                    <h3>Ruler</h3>
+                    <p>₱15.00</p>
+                    <button class="add-btn" data-id="6">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- SHOPPING CART -->
+        <section class="panel">
+            <h2>Shopping Cart</h2>
+
+            <div id="cart-items">
+                <p>Your cart is empty.</p>
+            </div>
+
+            <h2>Order Summary</h2>
+            <p>Total Amount:
+                <strong id="total">₱0.00</strong>
+            </p>
+        </section>
+
+        <!-- PAYMENT SECTION -->
+        <section class="panel">
+            <h2>Cash Payment</h2>
+
+            <label for="cash">Amount Paid (₱):</label>
+
+            <input type="text" id="cash" inputmode="decimal" placeholder="Enter cash amount">
+
+            <button id="pay-btn">
+                Confirm Payment
+            </button>
+
+            <p id="payment-message" role="status"></p>
+        </section>
+
+        <!-- RECEIPT SECTION -->
+        <section class="panel">
+            <h2>Digital Receipt</h2>
+
+            <div id="receipt">
+                <p>No completed transaction yet.</p>
+            </div>
+
+            <button id="new-btn">
+                New Transaction
+            </button>
+        </section>
+
     </main>
 
     <script src="script.js"></script>
+
 </body>
 
 </html>
